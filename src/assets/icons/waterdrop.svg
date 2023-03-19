@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 100 100"
+   id="waterdrop"
+   version="1.1"
+   sodipodi:docname="waterdrop.svg"
+   width="100"
+   height="100"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <sodipodi:namedview
+      id="namedview8"
+      pagecolor="#ffffff"
+      bordercolor="#000000"
+      borderopacity="0.25"
+      inkscape:showpageshadow="2"
+      inkscape:pageopacity="0.0"
+      inkscape:pagecheckerboard="0"
+      inkscape:deskcolor="#d1d1d1"
+      showgrid="false"
+      inkscape:zoom="2.36"
+      inkscape:cx="49.788136"
+      inkscape:cy="50.211864"
+      inkscape:window-width="1920"
+      inkscape:window-height="991"
+      inkscape:window-x="-9"
+      inkscape:window-y="-9"
+      inkscape:window-maximized="1"
+      inkscape:current-layer="waterdrop" />
+   <defs
+      id="defs18" />
+   <title
+      id="title11">water</title>
+   <circle
+      style="fill:#840ece;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round"
+      id="path3091"
+      cx="50"
+      cy="50"
+      r="50" />
+   <path
+      d="M 49.999988,74.597911 A 17.622381,17.622381 0 0 1 32.377611,56.975529 c 0,-11.748253 17.622377,-31.573432 17.622377,-31.573432 0,0 17.622391,19.825179 17.622391,31.573432 A 17.622381,17.622381 0 0 1 49.999988,74.597911 Z"
+      id="path13"
+      style="fill:#d2d2d1;fill-opacity:1;stroke-width:2.93707" />
+</svg>

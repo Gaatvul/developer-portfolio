@@ -1,0 +1,492 @@
+/* inconsolata-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/inconsolata-v31-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/inconsolata-v31-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/inconsolata-v31-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/inconsolata-v31-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/inconsolata-v31-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/inconsolata-v31-latin-regular.svg#Inconsolata")
+      format("svg"); /* Legacy iOS */
+}
+
+/* merriweather-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/merriweather-sans-v22-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/merriweather-sans-v22-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("./assets/fonts/merriweather-sans-v22-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/merriweather-sans-v22-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/merriweather-sans-v22-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/merriweather-sans-v22-latin-regular.svg#MerriweatherSans")
+      format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --main-bg-color: #ece7ef;
+  --secondary-bg-color: #ffffff;
+  --main-accent-color: #840ece;
+  --main-text-color: #18012b;
+  --main-footer-color: beige;
+  --hero-bg-color: rgb(44, 44, 44);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  background-color: var(--main-bg-color);
+  margin: 0;
+  font-family: "Inconsolata", "Courier", monospace;
+  color: var(--main-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  width: 100%;
+  overflow: auto;
+}
+
+.nav a {
+  float: left;
+  padding: 1.5vw 0;
+  font-size: 3vw;
+  font-weight: 600;
+  width: 25%;
+  text-align: center;
+  color: var(--main-text-color);
+  border-bottom: 3px solid var(--main-bg-color);
+  transition: border-bottom 0.7s ease;
+}
+
+.nav a:hover {
+  border-bottom: 3px solid var(--main-accent-color);
+}
+
+a.nav-current {
+  border-bottom: 3px solid var(--main-accent-color);
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.section-title,
+.name {
+  font-size: 6vw;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900;
+}
+
+section:first-child {
+  background-color: var(--hero-bg-color);
+}
+
+.section-title {
+  margin-bottom: 0;
+}
+
+.hero {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vw;
+  color: var(--main-bg-color);
+  width: 75%;
+  height: 100vh;
+}
+
+.profile-picture {
+  width: 25vw;
+  height: 25vw;
+}
+
+.about-text {
+  padding-left: 1rem;
+}
+
+.about-text p {
+  margin: 0;
+  text-align: start;
+}
+
+.hi {
+  font-size: 0.75rem;
+}
+
+.name::after {
+  content: "_";
+  font-weight: bolder;
+  animation: blink ease 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.scroll-down {
+  fill: var(--main-bg-color);
+  position: absolute;
+  bottom: 1.75rem;
+  animation: hover 1s ease-in-out infinite;
+}
+
+@keyframes hover {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.tools {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 0.5rem;
+  margin: 1rem;
+  width: 50vw;
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: small;
+  font-weight: bolder;
+}
+
+.tools-about {
+  margin-bottom: 0;
+}
+
+.tools div {
+  margin: 0.5rem;
+}
+
+.tools i {
+  font-size: 2rem;
+}
+
+.tools > .maven > img {
+  width: 3rem;
+  transform: translateY(-0.5rem);
+}
+
+.projects,
+.about-me-wrapper,
+.contact-form-wrapper {
+  margin: 0 1rem;
+  width: 50vw;
+}
+
+.project,
+.contact-form {
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: auto;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.ribbon-wrapper {
+  position: absolute;
+  right: 0;
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+}
+
+.ribbon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: larger;
+  font-weight: 600;
+  color: var(--secondary-bg-color);
+  top: 1.5rem;
+  right: 2rem;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  transform: rotate(45deg);
+  background-color: rgb(221, 0, 0);
+}
+
+.fresh {
+  background-color: green;
+}
+
+.project-title {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900;
+  margin-top: 0.5rem;
+}
+
+.project-description {
+  padding-top: 0.1rem;
+  text-align: start;
+  margin: 0 1rem;
+}
+
+.links {
+  color: var(--main-text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.links a {
+  border: 1px solid var(--main-text-color);
+  color: var(--main-text-color);
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background-color: var(--main-accent-color);
+  color: var(--main-bg-color);
+}
+
+.slideshow {
+  position: relative;
+  padding-top: 0;
+}
+
+.project-images {
+  max-width: 1000px;
+  height: 23vw;
+}
+
+.img {
+  margin-top: 1rem;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 5px 5px;
+}
+
+.img {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: calc(50% - 15px);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.right {
+  right: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dots {
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-1.5rem);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.dot {
+  background-color: rgba(255, 255, 255, 0.796);
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 0.25rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.about-me-wrapper {
+  text-align: start;
+}
+
+.about-me-text {
+  width: 100%;
+}
+
+.contact-form {
+  padding: 1rem 0;
+}
+
+label {
+  float: left;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+input,
+textarea {
+  width: 92%;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 5px;
+  text-indent: 3px;
+  margin-top: 0;
+}
+
+input {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  padding: 6px;
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  display: flex;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  color: var(--main-bg-color);
+  font-size: 1.2rem;
+  background: var(--hero-bg-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  display: block;
+  position: static;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-footer-color);
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+.footer > p {
+  font-size: 1.5vw;
+  margin-bottom: 0;
+}
+
+.socials {
+  padding-top: 2vw;
+}
+
+.socials img {
+  width: 4vw;
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .nav a {
+    float: none;
+    padding: 2vw 0;
+    font-size: 5vw;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+  }
+
+  .projects,
+  .tools,
+  .about-me-wrapper,
+  .contact-form-wrapper {
+    width: 90vw;
+  }
+
+  .project-images {
+    height: 40vw;
+  }
+
+  input {
+    font-size: 1.25rem;
+  }
+
+  textarea {
+    font-size: 1.25rem;
+  }
+
+  .socials img {
+    width: 10vw;
+  }
+
+  .links svg {
+    width: 20%;
+  }
+}
