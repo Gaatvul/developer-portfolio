@@ -6,6 +6,7 @@ import bugJarRepPage from '../assets/images/bug_report_view.png'
 import splashMain from '../assets/images/main_screen.png'
 
 
+
 const Projects = () => {
 
     const bugJarImages = [
