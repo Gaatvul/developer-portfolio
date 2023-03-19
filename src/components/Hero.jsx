@@ -3,7 +3,7 @@ const Hero = () => {
         <section>
             <div className="hero">
                 <img
-                    src="src/assets/images/picture.png"
+                    src="./images/picture.png"
                     className="profile-picture"
                     alt="profile picture"
                 />

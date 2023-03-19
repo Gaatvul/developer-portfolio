@@ -42,7 +42,7 @@ const Tools = () => {
                 </div>
                 <div className="maven">
                     <img
-                        src="src/assets/icons/Apache_Maven_logo.svg#svg3055"
+                        src="./icons/Apache_Maven_logo.svg#svg3055"
                         alt="maven logo"
                     />
                     <p>Maven</p>
