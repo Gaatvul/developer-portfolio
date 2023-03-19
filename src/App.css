@@ -316,11 +316,6 @@ section:first-child {
   border-radius: 0 0 5px 5px;
 }
 
-.img {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 .arrow {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;

@@ -1,3 +1,5 @@
+import mavenIcon from '../assets/icons/Apache_Maven_logo.svg#svg3055';
+
 const Tools = () => {
     return (
         <section id="tools">
@@ -42,7 +44,7 @@ const Tools = () => {
                 </div>
                 <div className="maven">
                     <img
-                        src="src/assets/icons/Apache_Maven_logo.svg#svg3055"
+                        src={mavenIcon}
                         alt="maven logo"
                     />
                     <p>Maven</p>

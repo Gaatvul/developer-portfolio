@@ -1,9 +1,11 @@
+import profilePic from '../assets/images/picture.png'
+
 const Hero = () => {
     return (
         <section>
             <div className="hero">
                 <img
-                    src="src/assets/images/picture.png"
+                    src={`${profilePic}`}
                     className="profile-picture"
                     alt="profile picture"
                 />

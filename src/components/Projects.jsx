@@ -1,29 +1,35 @@
-import ImageSlider from "./ImageSlider"
+import ImageSlider from "./ImageSlider";
+import bugJarHome from '../assets/images/home_page.png'
+import bugJarDash from '../assets/images/dashboard.png'
+import bugJarAllReps from '../assets/images/all_bug_reports.png'
+import bugJarRepPage from '../assets/images/bug_report_view.png'
+import splashMain from '../assets/images/main_screen.png'
+
 
 const Projects = () => {
 
     const bugJarImages = [
         {
-            source: "src/assets/images/home_page.png",
+            source: `${bugJarHome}`,
             title: "Bug Jar home page"
         },
         {
-            source: "src/assets/images/dashboard.png",
+            source: `${bugJarDash}`,
             title: "Bug Jar dashboard"
         },
         {
-            source: "src/assets/images/all_bug_reports.png",
+            source: `${bugJarAllReps}`,
             title: "Bug Jar all reports page"
         },
         {
-            source: "src/assets/images/bug_report_view.png",
+            source: `${bugJarRepPage}`,
             title: "Bug Jar bug report page"
         }
     ]
 
     const weatherImages = [
         {
-            source: "src/assets/images/main_screen.png",
+            source: `${splashMain}`,
             title: "A Splash of Weather main page"
         }
     ]
