@@ -47,7 +47,20 @@
   --main-accent-color: #840ece;
   --main-text-color: #18012b;
   --main-footer-color: beige;
-  --hero-bg-color: rgb(44, 44, 44);
+  --hero-bg-color: #2c2c2c;
+  --scrollbar-color: #888;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hero-bg-color);
 }
 
 * {
@@ -72,31 +85,27 @@ html {
 
 a {
   text-decoration: none;
+  color: var(--main-bg-color);
 }
 
 .nav {
-  width: 100%;
-  overflow: auto;
-}
-
-.nav a {
-  float: left;
-  padding: 1.5vw 0;
-  font-size: 3vw;
-  font-weight: 600;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   width: 25%;
-  text-align: center;
-  color: var(--main-text-color);
-  border-bottom: 3px solid var(--main-bg-color);
-  transition: border-bottom 0.7s ease;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
-.nav a:hover {
-  border-bottom: 3px solid var(--main-accent-color);
+.nav > a {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease-in;
 }
 
-a.nav-current {
-  border-bottom: 3px solid var(--main-accent-color);
+.nav > a:hover {
+  border-bottom-color: var(--main-bg-color);
 }
 
 section {
@@ -146,7 +155,7 @@ section:first-child {
 }
 
 .about-text p {
-  margin: 0;
+  margin: 0.5rem;
   text-align: start;
 }
 
@@ -446,16 +455,35 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .nav {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .nav a {
-    float: none;
-    padding: 2vw 0;
-    font-size: 5vw;
-    font-weight: 600;
-    text-align: center;
+    position: relative;
     width: 100%;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+    top: 0.5rem;
+    right: 0;
+  }
+
+  .hero {
+    flex-flow: column;
+    justify-content: start;
+  }
+
+  .profile-picture {
+    width: 45vw;
+    height: 45vw;
+    margin: 3rem 0;
+  }
+
+  .hi {
+    font-size: 0.5rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .about {
+    font-size: 1rem;
   }
 
   .projects,
@@ -467,6 +495,13 @@ textarea {
 
   .project-images {
     height: 40vw;
+  }
+
+  .arrow {
+    padding: 20px;
+    top: calc(50% - 2rem);
+    border-radius: 5px;
+    font-size: 2rem;
   }
 
   input {
